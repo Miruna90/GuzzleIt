@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Main</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="menu.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-color: #fff1cf">
+        <header id="header">
+            <img class="logo" src="../Pics/onlinelogomaker-122519-0001-7819.png" alt="logo">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="./Login.html">Login</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#"><button class="head">Contact</button></a>
+        </header>
+<!--        Menu-1-->
+        <div class="container">
+            <div>
+            <img src="../Pics/Menu1.png" alt="Juice" style="height: 300px; width: 200px;margin:50px; ">
+             </div>
+             <div class="description" >
+            <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+            
+            </div>
+            <form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+</form>
+            <div>
+            <a class="cta" >
+                <button class="myBtn" id="myBtn1">Add to Cart</button></a>
+        </div>
+         </div>
+<!--        Menu2-->
+         <div class="container">
+            <div>
+            <img src="../Pics/Menu2.png" alt="Juice" style="height: 300px; width: 200px;margin:50px; ">
+             </div>
+             <div class="description" >
+            <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+            
+            </div>
+            <form>
+  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+  <input type="number" id="number" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+</form>
+            <div>
+            <a class="cta"  >
+                <button class="myBtn" id="myBtn2" >Add to Cart</button></a>
+        </div>
+         </div>
+        
+          <!-- Modal content -->
+        
+        <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Customize</h3>
+    
+    <p>Some text in the Modal..
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa.</p>
+      <h3>Fruits</h3>
+<div class="container">
+    
+      <div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="strawberry">
+  <label class="form-check-label" for="inlineCheckbox1">Strawberry</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="mango">
+  <label class="form-check-label" for="inlineCheckbox2">Mango</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="orange" >
+  <label class="form-check-label" for="inlineCheckbox3">Orange</label>
+</div>
+    <div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="peaches" >
+  <label class="form-check-label" for="inlineCheckbox3">Peaches</label>
+</div>
+    <div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="blueberry" >
+  <label class="form-check-label" for="inlineCheckbox3">Blueberry</label>
+</div>
+    <div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="kiwi" >
+  <label class="form-check-label" for="inlineCheckbox3">Kiwi</label>
+</div>
+    <div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="banana" >
+  <label class="form-check-label" for="inlineCheckbox3">Banana</label>
+</div>
+  </div>
+       <button type="submit" class="btn btn-primary">Add to cart</button>
+            </div>
+
+</div>
+    
+          <footer>@ copyright Miru2020.</footer>
+        
+        <script type="text/javascript">
+            function increaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('number').value = value;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('number').value = value;
+}
+  
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn1");
+    var btn1 = document.getElementById("myBtn2");
+    
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+btn1.onclick = function() {
+  modal.style.display = "block";
+}
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}   
+         </script>
+    </body>
