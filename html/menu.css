@@ -198,3 +198,17 @@ input[type=number]::-webkit-outer-spin-button {
   text-decoration: none;
   cursor: pointer;
 }
+
+label.form-check-label{
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+label.form-check-label:last-child:after {
+  clear: both;
+  content: " ";
+  display: block;
+  height: 0px;
+  overflow: hidden;
+}
