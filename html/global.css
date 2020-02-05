@@ -19,13 +19,14 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-   // border: 10px;
+    border: 10px;
     background-color: #ffd369;
     height: 150px;
 }
 .logo{
     cursor: pointer;
-    margin-right: auto;
+ margin-right: auto;
+    max-width: 100%;
 }
 
 .nav_links{
@@ -35,7 +36,7 @@ header{
 
 .nav_links li{
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 15px;
     
     
 }
@@ -60,7 +61,7 @@ button{
     padding: 9px 25px;
     background-color: rgba(0,136,169,1);
     border: none;
-    border-radius: 50px;
+    border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
@@ -88,5 +89,5 @@ section{
 }
 
 .imgbody {
-    margin-top: 10%;
+    margin-top: 20%;
 }

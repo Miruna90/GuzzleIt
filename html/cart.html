@@ -1,31 +1,120 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html>  
+<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Shopping Cart</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="./cart.css">
+    
+        <link rel="stylesheet" href="./carteg.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
     </head>
-    <body style="background-color: #fff1cf">
+ <body style="background-color: #fff1cf">
         <header class="header">
             <img class="logo" src="../Pics/onlinelogomaker-122519-0001-7819.png" alt="logo">
             <nav>
                 <ul class="nav_links">
                     <li><a href="./Login.html">Login</a></li>
                     <li><a href="./Menu.html">Menu</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="./Global.html">About Us</a></li>
                 </ul>
             </nav>
             <a class="cta" href="#"><button>Contact</button></a>
         </header> 
-        <h4>Shopping Cart</h4>
-        
-        
-        <footer>@ copyright Miru2020.</footer>
-    </body>
+<script src="https://use.fontawesome.com/c560c025cf.js"></script>
+<div class="container" style="padding-top:20px ">
+   <div class="card shopping-cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+               <span style="font-size: 20px ">Shopping cart </span>
+                <a href="./Menu.html" class="btn btn-primary btn-sm btn-blockbtn-sm pull-right">Continue shopping</a>
+                <div class="clearfix"></div>
+            <div class="card-body">
+                    <!-- PRODUCT -->
+                    <div class="row" style="padding-top:20px">
+                        <div class="col-12 col-sm-12 col-md-2 text-center">
+                                <img class="img-responsive" src="http://placehold.it/120x80" alt="prewiew" width="120" height="80">
+                        </div>
+                        <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+                            <h4 class="product-name"><strong>Product Name</strong></h4>
+                            <h4>
+                                <small>Product description</small>
+                            </h4>
+                        </div>
+                        <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+                            <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                                <h6><strong>25.00 <span class="text-muted">x</span></strong></h6>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4">
+                                <div class="quantity">
+                                    <input type="button" value="+" class="plus">
+                                    <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                                           size="4">
+                                    <input type="button" value="-" class="minus">
+                                </div>
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 text-right">
+                                <button type="button" class="btn btn-outline-danger btn-xs">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- END PRODUCT -->
+                    <!-- PRODUCT -->
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-2 text-center">
+                                <img class="img-responsive" src="http://placehold.it/120x80" alt="prewiew" width="120" height="80">
+                        </div>
+                        <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+                            <h4 class="product-name"><strong>Product Name</strong></h4>
+                            <h4>
+                                <small>Product description</small>
+                            </h4>
+                        </div>
+                        <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+                            <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                                <h6><strong>25.00 <span class="text-muted">x</span></strong></h6>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4">
+                                <div class="quantity">
+                                    <input type="button" value="+" class="plus">
+                                    <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                                           size="4">
+                                    <input type="button" value="-" class="minus">
+                                </div>
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 text-right">
+                                <button type="button" class="btn btn-outline-danger btn-xs">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- END PRODUCT -->
+<!--
+                <div class="pull-right">
+                    <a href="" class="btn btn-outline-secondary pull-right">
+                        Update shopping cart
+                    </a>
+                </div>
+-->
+            </div>
+            <div class="card-footer">
+
+                <div class="pull-right" style="margin: 10px">
+                    <a href="" class="btn btn-success pull-right">Checkout</a>
+                    <div class="pull-right" style="margin: 5px">
+                        Total price: <b>50.00</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>
