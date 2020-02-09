@@ -34,7 +34,7 @@ header{
 
 .nav_links li{
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 15px;
     
     
 }
@@ -53,7 +53,7 @@ header{
     margin-right: auto;
  }
 .footer{
-   // height:20px;
+   height:20px;
 	position:fixed;
     width: 100%;
 	bottom: 0;

@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Login </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
     <link rel="stylesheet" type="text/css"  href="../styles/page1.css">
       <link rel="stylesheet" href="login.css">
+<!--          <script src="../Script/Script.js"></script>-->
   </head>
   <body>
     <header class="header">
-            <img class="logo" src="../Pics/onlinelogomaker-122519-0001-7819.png" alt="logo">
+            <img class="logo" src="../Pics/new1.png" alt="logo" style="max-width: 100%">
             <nav>
                 <ul class="nav_links">
-                    <li><a href="#">Login</a></li>
+                    <li><a href="./Account.html">Sign Up</a></li>
                     <li><a href="./Menu.html">Menu</a></li>
                     <li><a href="./Global.html">About Us</a></li>
                 </ul>
@@ -22,7 +24,7 @@
     padding: 9px 25px;
     background-color: rgba(0,136,169,1);
     border: none;
-    border-radius: 50px;
+    border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease 0s;">Contact</button></a>
         </header>
@@ -31,26 +33,27 @@
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
             <div class="col-md-4 col-sm-4 col-xs-12">
               <form class="form-container">
-                <h1 style="text-align: center; color: #232020"> Login</h1>
+                <h1 id="signin" style="text-align: center; color: #232020"> Login</h1>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <label for="InputEmail">Email</label>
+                    <input type="email" class="form-control" id="Email" placeholder="Email">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="InputPassword">Password</label>
+                    <input type="password" class="form-control" id="Password" placeholder="Password">
                   </div>
                 
-                  <button type="submit" class="btn btn-success btn-block" style="align-items: center">Login</button>
+                  <button type="submit" class="btn btn-success btn-block" style="align-items: center" onclick="login()">Login</button>
                 </form>
                 <p><a href="Account.html">Click Here</a> to create a New Account</p>
             </div>
             <div class="col-md-4 col-sm-4 col-xs-12"></div>
           </div>
-          <div class="footer">
-  <p>@ copyright Miru2020.</p>
-</div>
+          
     </div>
-    
+      <div class="footer">
+  <p style="background-color: gold;">@ copyright Miru2020.</p>
+</div>
+            
   </body>
 </html>

@@ -66,15 +66,15 @@ button{
     transition: all 0.3s ease 0s;
 }
 
-footer{
-   // height:20px;
-	position:fixed;
-    width: 100%;
-	bottom: 0;
-	//background-color: #5588a3;
-	font-style: italic;
-    left: 0;
-
+.site-footer{
+     background-color:#ffd369;
+    padding-top: 30px;
+}
+.bottom-footer{
+    border-top: 1px solid #b2b2b2;
+    margin-top: 10px;
+    padding-top: 10px;
+    color: black;
 }
 section{
     background-color: #fff1cf
@@ -90,4 +90,16 @@ section{
 
 .imgbody {
     margin-top: 20%;
+    
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*
+img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+*/
+

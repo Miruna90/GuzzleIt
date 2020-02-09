@@ -65,6 +65,7 @@ button{
     transition: all 0.3s ease 0s;
 }
 
+/*
 footer{
    // height:20px;
 	position:fixed;
@@ -75,6 +76,7 @@ footer{
     left: 0;
 
 }
+*/
 section{
     background-color: #fff1cf
     padding: 0em;
@@ -89,4 +91,8 @@ section{
 
 .imgbody {
     margin-top: 20%;
+}
+
+.site-footer{
+    background-color: #ffd369
 }
