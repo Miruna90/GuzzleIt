@@ -21,7 +21,7 @@ header{
     align-items: center;
     border: 10px;
     background-color: #ffd369;
-    height: 150px;
+    height: 150px;./
 }
 .logo{
     cursor: pointer;
@@ -69,6 +69,7 @@ button{
 .site-footer{
      background-color:#ffd369;
     padding-top: 30px;
+    padding-bottom: 15px;
 }
 .bottom-footer{
     border-top: 1px solid #b2b2b2;

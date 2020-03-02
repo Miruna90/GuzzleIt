@@ -1,0 +1,126 @@
+
+/* the style for the cart pages */
+.cart {
+    width: 700px;
+}
+.cart label {
+    float: left;
+    width: 10em;
+    font-weight: bold;
+    padding-top: 0.25em;    
+}
+.cart input[type="text"], input[type="email"], input[type="password"] {
+    float: left;
+    width: 12em;
+    margin-left: 0.5em;
+    margin-right: 0.2em;
+}
+.cart input[type="button"] {
+    margin-left: 0.5em;
+}
+.cart select {
+    margin-left: 0.5em;
+    margin-right: 0.2em;
+}
+.cart_row input[type="text"] {
+    width: 2em;
+    margin-left: 0em;
+}
+#required {
+    margin-left: 8.5em;
+    margin-bottom: .5em;
+}
+.required {
+    color: red;
+    margin-bottom: 0;
+}
+#quantity_text {
+    width: 2em;
+}
+#float_right {
+    float: left;
+    margin-right: 1em;
+}
+
+.shopping-cart {
+    margin-top: 40px;
+}
+
+/* header and footer*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+*{
+/*   // box-sizing: border-box;*/
+    margin: 0;
+    border: 10px;
+    padding:0;
+    
+}
+
+li,a,button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 10px;
+    background-color: #ffd369;
+    height: 150px;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav_links{
+    list-style: none;
+    
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 15px;
+    
+    
+}
+
+.nav_links a{
+    transition: all 0.3 ease 0s;
+}
+
+.nav_links li a:hover{
+    color: green;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+button{
+    
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+footer{
+   // height:20px;
+	position:fixed;
+    width: 100%;
+	bottom: 0;
+	//background-color: #5588a3;
+	font-style: italic;
+    left: 0;
+
+}

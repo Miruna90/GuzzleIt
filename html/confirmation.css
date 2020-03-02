@@ -1,3 +1,8 @@
+p{
+	font-size:13px;
+}
+
+
 /* header and footer*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
 *{
@@ -63,4 +68,20 @@ button{
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+}
+
+.check{
+    padding: 0px;
+    border: 1px;
+    margin-left :2px;
+     margin-right :6px;
+    margin-top:10px;
+    
+}
+p{
+    font-size: 15px;
+    font-weight: 600;
+}
+h3{
+    text-decoration: underline palevioletred;
 }
